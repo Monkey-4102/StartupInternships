@@ -1,0 +1,169 @@
+{
+  "theme_and_archetype": {
+    "theme": "Light",
+    "archetype": "4 (Swiss & High-Contrast) + Soft Utility",
+    "description": "A pristine, high-utility, whitespace-heavy design inspired by Linear, Stripe, and modern Silicon Valley SaaS. Emphasizes clean borders, subtle minimal shadows, generous padding, and a single premium cobalt accent color."
+  },
+  "typography": {
+    "font_family": {
+      "heading": "DM Sans, sans-serif",
+      "body": "Geist, Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none font-semibold text-slate-900",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-snug font-medium text-slate-900",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium text-slate-900",
+      "h4": "text-lg font-medium text-slate-800",
+      "body": "text-base leading-relaxed text-slate-600",
+      "small": "text-sm text-slate-500",
+      "overline": "text-xs font-semibold tracking-widest uppercase text-slate-400"
+    }
+  },
+  "colors": {
+    "base": {
+      "background": "#FFFFFF",
+      "surface": "#FAFAFA",
+      "surface_hover": "#F4F4F5",
+      "border": "#E4E4E7",
+      "border_subtle": "#F4F4F5"
+    },
+    "text": {
+      "primary": "#09090B",
+      "secondary": "#52525B",
+      "tertiary": "#A1A1AA",
+      "inverse": "#FFFFFF"
+    },
+    "accent": {
+      "primary": "#2563EB",
+      "primary_hover": "#1D4ED8",
+      "primary_light": "#EFF6FF",
+      "primary_ring": "rgba(37, 99, 235, 0.2)"
+    },
+    "status": {
+      "success": { "bg": "#ECFDF5", "text": "#059669", "border": "#A7F3D0" },
+      "warning": { "bg": "#FFFBEB", "text": "#D97706", "border": "#FDE68A" },
+      "error": { "bg": "#FEF2F2", "text": "#DC2626", "border": "#FECACA" },
+      "info": { "bg": "#EFF6FF", "text": "#2563EB", "border": "#BFDBFE" }
+    }
+  },
+  "design_tokens": {
+    "spacing": {
+      "section_y": "py-24 sm:py-32",
+      "container_x": "px-4 sm:px-6 lg:px-8",
+      "card_padding": "p-6 sm:p-8",
+      "gap_standard": "gap-6",
+      "gap_large": "gap-12"
+    },
+    "radii": {
+      "card": "rounded-xl",
+      "button": "rounded-md",
+      "input": "rounded-md",
+      "badge": "rounded-full"
+    },
+    "shadows": {
+      "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "card": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
+      "card_hover": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)",
+      "dropdown": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)"
+    }
+  },
+  "layout_structure": {
+    "landing_page": {
+      "grid_mode": "Tetris Grid",
+      "header": "Crystal Glass sticky header (backdrop-blur-xl bg-white/70, border-b border-gray-200/50)",
+      "hero": "Asymmetric bento layout. Large H1 left-aligned, live stats counters right/bottom.",
+      "sections": "Generous spacing (py-32). Alternating pure white and soft gray backgrounds."
+    },
+    "dashboard": {
+      "grid_mode": "Control Room Grid",
+      "shell": "Fixed left sidebar (w-64, bg-gray-50, border-r border-gray-200). Top header (h-16, bg-white, border-b border-gray-200) for breadcrumbs, search, and profile. Main content area (bg-white) with max-width optimization."
+    }
+  },
+  "components": {
+    "button": {
+      "primary": "bg-blue-600 text-white hover:bg-blue-700 shadow-sm transition-all rounded-md px-4 py-2 text-sm font-medium",
+      "secondary": "bg-white text-slate-700 border border-gray-200 hover:bg-gray-50 hover:text-slate-900 shadow-sm rounded-md px-4 py-2 text-sm font-medium",
+      "ghost": "bg-transparent text-slate-600 hover:bg-gray-100 hover:text-slate-900 rounded-md px-4 py-2 text-sm font-medium",
+      "danger": "bg-red-50 text-red-600 hover:bg-red-100 rounded-md px-4 py-2 text-sm font-medium"
+    },
+    "card": {
+      "base": "bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden",
+      "hover_effect": "hover:shadow-md hover:border-gray-300 transition-all duration-200",
+      "internship_card": "Includes company logo (w-10 h-10 rounded-md border), clear typography hierarchy (H3 for title, small text for company), flex layout for tags (Fixed/Hybrid/Unpaid).",
+      "stat_card": "p-6. Large metric (text-3xl font-semibold), subtle icon (text-gray-400), sparkline or trend indicator (+12% text-green-600)."
+    },
+    "input": {
+      "base": "w-full border border-gray-300 rounded-md px-3 py-2 text-sm text-slate-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors"
+    },
+    "badge": {
+      "base": "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium",
+      "fixed": "bg-blue-50 text-blue-700 border border-blue-200",
+      "performance": "bg-purple-50 text-purple-700 border border-purple-200",
+      "unpaid": "bg-gray-100 text-gray-700 border border-gray-200",
+      "hybrid": "bg-teal-50 text-teal-700 border border-teal-200",
+      "verified": "bg-emerald-50 text-emerald-700 border border-emerald-200 with small check icon",
+      "match_score": "bg-indigo-50 text-indigo-700 border border-indigo-200 font-bold"
+    },
+    "kanban": {
+      "board": "flex gap-6 overflow-x-auto pb-4 h-[calc(100vh-12rem)]",
+      "column": "w-80 flex-shrink-0 flex flex-col bg-gray-50 rounded-lg p-4",
+      "item": "bg-white border border-gray-200 rounded-md p-4 shadow-sm mb-3 cursor-grab active:cursor-grabbing hover:border-blue-300 transition-colors"
+    }
+  },
+  "animations": {
+    "hover": "transform transition-all duration-200 ease-out",
+    "button_click": "active:scale-[0.98]",
+    "page_transition": "animate-in fade-in slide-in-from-bottom-4 duration-500",
+    "staggered_list": "Use motion.div with staggered children delays for internship feed and kanban cards.",
+    "marquee": "Slow, smooth drift. react-fast-marquee with grayscale logos and hover-pause."
+  },
+  "testing": {
+    "attributes": "All interactive elements must include data-testid. Examples: data-testid='apply-button', data-testid='internship-card-123', data-testid='sidebar-nav-jobs'."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1777861845988-1914a1588676?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNoJTIwd29ya3NwYWNlJTIwbWluaW1hbCUyMGRlc2t8ZW58MHx8fHwxNzc5ODk4MTkzfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Clean, modern laptop on wooden desk setup. Use with white/gray gradient overlay (bg-white/80) to ensure text legibility.",
+      "category": "hero"
+    },
+    "chennai_skyline": {
+      "url": "https://images.pexels.com/photos/9432498/pexels-photo-9432498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Aerial view of colorful high-rise buildings in Chennai. Use for ecosystem/domain coverage sections.",
+      "category": "background"
+    },
+    "institution_building": {
+      "url": "https://images.unsplash.com/photo-1632988663082-4bac2c1847a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHx1bml2ZXJzaXR5JTIwY2FtcHVzJTIwYnVpbGRpbmclMjBleHRlcmlvcnxlbnwwfHx8fDE3Nzk4OTgxOTN8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern university building for institution placeholders.",
+      "category": "institution"
+    },
+    "student_avatars": [
+      {
+        "url": "https://images.pexels.com/photos/28570315/pexels-photo-28570315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "avatar"
+      },
+      {
+        "url": "https://images.pexels.com/photos/7707014/pexels-photo-7707014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "avatar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1544168190-79c17527004f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB5b3VuZyUyMGRpdmVyc2UlMjB0ZWNoJTIwc3R1ZGVudCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3OTg5ODE5M3ww&ixlib=rb-4.1.0&q=85",
+        "category": "avatar"
+      }
+    ]
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "Stroke width 1.5px, consistent sizing (w-4 h-4 for inline, w-6 h-6 for standalone)."
+  },
+  "instructions_to_main_agent": [
+    "Ensure the entire app feels like a high-end enterprise SaaS product (Linear/Stripe influence). Avoid heavy shadows; prefer 1px borders and slight shadow-sm.",
+    "Do NOT use raw HTML `<select>` or `<input type='date'>`. Use Shadcn UI for forms, tabs, dialogs, and dropdowns.",
+    "Implement real-time styled dashboards with exact Kanbans for startups and smart match score badges.",
+    "Use staggered Framer Motion or Tailwind animate-in for lists and page loads.",
+    "Strictly follow the color palette: mostly white, soft gray surface backgrounds, black text, and blue-600 for primary CTA.",
+    "Do not hallucinate random image URLs; use the media provided in this JSON.",
+    "Include data-testid on all interactive elements as per the E1 testing rules.",
+    "The Hero image must be placed behind a strong white gradient overlay (e.g. bg-white/80 or bg-gradient-to-r from-white via-white/90 to-transparent) so dark text stands out perfectly."
+  ]
+}
